@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pwd">Jelszó</string>
+    <string name="email">Email</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="username">Felhasználónév</string>
+    <string name="pwd_again">Jelszó megerősítése</string>
+</resources>

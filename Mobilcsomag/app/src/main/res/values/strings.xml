@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anyasegíts</string>
+    <string name="pwd">Jelszó</string>
+    <string name="email">Email</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="username">Felhasználónév</string>
+    <string name="cancel">Mégse</string>
+    <string name="pwd_again">Jelszó megerősítése</string>
+</resources>
