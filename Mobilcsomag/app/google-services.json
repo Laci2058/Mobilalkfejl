@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "403843115205",
+    "project_id": "onlinemobil-cb5e0",
+    "storage_bucket": "onlinemobil-cb5e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403843115205:android:38e2ebc5b0c1e1c2c468ac",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403843115205-gcc72sn8fq5j3bj3kcltgl0tq5arjqo2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "5de6a379eef79f741d947e43458f188ccf796cf8"
+          }
+        },
+        {
+          "client_id": "403843115205-8tssvuoekigrt55e2csp5gt042egf798.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQl-Ctuj8x4H47wip2cYX1aLe0JiFu98g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403843115205-8tssvuoekigrt55e2csp5gt042egf798.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
