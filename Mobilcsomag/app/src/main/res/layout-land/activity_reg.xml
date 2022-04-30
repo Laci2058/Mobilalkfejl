@@ -18,7 +18,7 @@
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.120" />
+        app:layout_constraintVertical_bias="0" />
 
     <EditText
         android:id="@+id/email"
@@ -28,10 +28,10 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_name"
-        app:layout_constraintVertical_bias="0.120" />
+        app:layout_constraintVertical_bias="0.10" />
 
     <EditText
         android:id="@+id/reg_pwd"
@@ -44,7 +44,7 @@
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="0.120" />
+        app:layout_constraintVertical_bias="0.10" />
 
     <EditText
         android:id="@+id/reg_pwd_again"
@@ -57,7 +57,7 @@
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_pwd"
-        app:layout_constraintVertical_bias="0.120" />
+        app:layout_constraintVertical_bias="0.10" />
 
 
     <LinearLayout
@@ -70,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_pwd_again"
-        app:layout_constraintVertical_bias="0.3">
+        app:layout_constraintVertical_bias="0.05">
 
         <Button
             android:id="@+id/reg"
@@ -89,17 +89,4 @@
             app:layout_constraintStart_toEndOf="@+id/reg" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="25dp"
-        android:rotation="1"
-        android:text="@string/registration"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

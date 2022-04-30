@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Shop"
+            android:name=".ShopActivity"
             android:exported="false" />
         <activity
-            android:name=".Reg"
+            android:name=".RegActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

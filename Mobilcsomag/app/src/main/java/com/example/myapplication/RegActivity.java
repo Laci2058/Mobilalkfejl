@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Reg extends AppCompatActivity {
+public class RegActivity extends AppCompatActivity {
     EditText username;
     EditText email;
     EditText pwd;
@@ -60,14 +60,14 @@ public class Reg extends AppCompatActivity {
                 if (task.isSuccessful()) {
                     startShopping();
                 } else {
-                    Toast.makeText(Reg.this, "Nem jött össze. " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegActivity.this, "Nem jött össze. " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });
     }
 
     private void startShopping() {
-        Intent intent = new Intent(this, Shop.class);
+        Intent intent = new Intent(this, ShopActivity.class);
         startActivity(intent);
     }
 }

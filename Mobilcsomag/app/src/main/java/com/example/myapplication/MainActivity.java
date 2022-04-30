@@ -62,12 +62,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-        Intent intent = new Intent(this, Reg.class);
+        Intent intent = new Intent(this, RegActivity.class);
         startActivity(intent);
     }
 
     private void startShopping() {
-        Intent intent = new Intent(this, Shop.class);
+        Intent intent = new Intent(this, ShopActivity.class);
         startActivity(intent);
     }
 

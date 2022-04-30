@@ -8,4 +8,31 @@
     <string name="cancel">Mégse</string>
     <string name="pwd_again">Jelszó megerősítése</string>
     <string name="gugli_login">gugli login</string>
+    <string name="kosarba">Kosárba</string>
+    <string name="log_out">Kijelentkezés</string>
+    <string name="kosar">kosar</string>
+    <string name="settings">Beállítások</string>
+    <string name="guest_login">Bej. vendégként</string>
+
+    <array name="shopping_item_images">
+        <item>@drawable/gamer</item>
+        <item>@drawable/bruh</item>
+        <item>@drawable/think</item>
+    </array>
+
+    <string-array name="item_names">
+        <item>Nagyon jó</item>
+        <item>Közepesen jó</item>
+        <item>Nem jó</item>
+    </string-array>
+    <string-array name="item_description">
+        <item>Nincs ennél jobb.</item>
+        <item>Van ennél rosszabb is.</item>
+        <item>Innen csak felvelé vezet az út.</item>
+    </string-array>
+    <string-array name="item_prices">
+        <item>1000000</item>
+        <item>1200</item>
+        <item>500</item>
+    </string-array>
 </resources>
