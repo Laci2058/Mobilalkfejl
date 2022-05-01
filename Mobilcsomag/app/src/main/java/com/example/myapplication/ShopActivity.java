@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.Menu;
@@ -111,11 +112,13 @@ public class ShopActivity extends AppCompatActivity {
                 finish();
                 return true;
             case R.id.kosar:
-                Toast.makeText(this, "kosár", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Ne keresd nincs :D", Toast.LENGTH_SHORT).show();
 
                 return true;
             case R.id.settings:
-                Toast.makeText(this, "beállítások", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "profil", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, ProfileActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

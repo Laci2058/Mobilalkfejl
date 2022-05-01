@@ -14,6 +14,9 @@
     <string name="settings">Beállítások</string>
     <string name="guest_login">Bej. vendégként</string>
 
+    <string name="del_profile">Profil törlése</string>
+    <string name="profil">Profil</string>
+
     <array name="shopping_item_images">
         <item>@drawable/gamer</item>
         <item>@drawable/bruh</item>

@@ -54,16 +54,20 @@ public class RegActivity extends AppCompatActivity {
         String mail = email.getText().toString();
         String passwd = pwd.getText().toString();
         String passwda = pwdagain.getText().toString();
-        mAuth.createUserWithEmailAndPassword(mail, passwd).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    startShopping();
-                } else {
-                    Toast.makeText(RegActivity.this, "Nem jött össze. " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+        if (passwd.equals(passwda)) {
+            mAuth.createUserWithEmailAndPassword(mail, passwd).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        startShopping();
+                    } else {
+                        Toast.makeText(RegActivity.this, "Nem jött össze. " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    }
                 }
-            }
-        });
+            });
+        }else {
+            Toast.makeText(RegActivity.this,"Nem egyeznek a jelszók",Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void startShopping() {

@@ -74,17 +74,21 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         String Name = username.getText().toString();
         String Password = password.getText().toString();
-        mAuth.signInWithEmailAndPassword(Name, Password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    startShopping();
-                } else {
-                    Toast.makeText(MainActivity.this, "Nem jött össze. " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
+        if (!Name.equals("") && !Password.equals("")) {
+            mAuth.signInWithEmailAndPassword(Name, Password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        startShopping();
+                    } else {
+                        Toast.makeText(MainActivity.this, "Nem jött össze. " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
 
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            Toast.makeText(MainActivity.this, "Üresek a bejelentkezési mezők", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override

@@ -6,4 +6,5 @@
     <string name="username">Felhasználónév</string>
     <string name="pwd_again">Jelszó megerősítése</string>
     <string name="kosar">kosar</string>
+    <string name="profil">Profil</string>
 </resources>
