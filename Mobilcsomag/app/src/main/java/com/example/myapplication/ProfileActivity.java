@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class ProfileActivity extends AppCompatActivity {
-    TextView username;
+    TextView email;
     Button logout;
     Button del_acc;
     FirebaseUser firebaseUser;
@@ -27,12 +27,16 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        username=findViewById(R.id.username_profile);
+
+
+        email=findViewById(R.id.username_profile);
+
+
         logout=findViewById(R.id.l_o);
         del_acc=findViewById(R.id.del);
 
         firebaseUser= FirebaseAuth.getInstance().getCurrentUser();
-
+        email.setText(firebaseUser.getEmail());
 
         del_acc.setOnClickListener(new View.OnClickListener() {
             @Override

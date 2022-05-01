@@ -50,7 +50,6 @@ public class RegActivity extends AppCompatActivity {
     }
 
     public void register(View view) {
-        String usnm = username.getText().toString();
         String mail = email.getText().toString();
         String passwd = pwd.getText().toString();
         String passwda = pwdagain.getText().toString();
